@@ -5,7 +5,7 @@ ENV LANG C.UTF-8
 
 RUN apk add go git gcc libc-dev
 
-RUN go get github.com/cloudflare/cloudflared/cmd/cloudflared
+RUN go get github.com/cloudflare/cloudflared/tree/master/cmd/cloudflared
 RUN mv /root/go/bin/cloudflared /usr/local/bin/cloudflared
 RUN chmod +x /usr/local/bin/cloudflared
 
